@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porvenir</title>
+    <style>
+      .contenedor {
+        align-items: center;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        margin-left: 0%;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom {
+        background-color: #4b721d;
+        color: white;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+      }
+      .text {
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="items">
+        <div class="img">
+          <img
+            alt="porvenirImg"
+            src="./WhatsApp Image 2021-09-22 at 3.47.40 PM.jpeg"
+          />
+        </div>
+        <div class="text">
+          <p>
+            Tu transacción ha finalizado, por favor haz click aquí para ver el
+            estado
+          </p>
+        </div>
+        <button id="cerrar" class="bottom">Ver estado transacción</button>
+      </div>
+    </div>
+
+    <script>
+      let cerrar = document.getElementById("cerrar");
+      cerrar.addEventListener("click", () => {
+        window.location.href = "comporvenirapp://";
+      });
+    </script>
+  </body>
+</html>
